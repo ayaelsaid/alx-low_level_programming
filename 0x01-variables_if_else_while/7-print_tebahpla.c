@@ -1,20 +1,21 @@
 #include <stdio.h>
 
-
 /**
  * main - entry point
  *
- * Description: increment value
+ * Description: declare the characters
  *
  * Return: 0(success)
 */
 
 int main(void)
 {
-	int n;
+	char ch;
 
-	for (n = 0; n <= 9; n++)
-		putchar('0' + (n % 10));
+	for (ch = 'z'; ch >= 'a'; ch--)
+		putchar(ch);
 	putchar('\n');
 	return (0);
 }
+
+
