@@ -1,14 +1,20 @@
 #include <stdio.h>
-/* print  the alphabet in lowercase */
+
+
+/**
+ * main - entry point
+ *
+ * Description: increment value
+ *
+ * Return: 0(success)
+*/
+
 int main(void)
 {
-        char ch;
+	char ch;
 
-        for (ch = 'a'; ch <= 'z'; ch++)
-{
-        putchar(ch);
-}
-        putchar('\n');
-
-        return (0);
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+		putchar('\n');
+	return (0);
 }
