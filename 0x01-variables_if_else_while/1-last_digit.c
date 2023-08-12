@@ -3,8 +3,6 @@
 #include <time.h>
 /* print last digit is greater than 5, 0 or less than 6 and not 0 */
 int main(void)
-
-
 {
 	int n, y;
 

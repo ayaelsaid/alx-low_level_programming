@@ -1,5 +1,5 @@
 #include <stdio.h>
-/* print  the alphabet in lowercase, and then in uppercase */
+/* print  the alphabet in lowercase */
 int main(void)
 {
         char ch;
