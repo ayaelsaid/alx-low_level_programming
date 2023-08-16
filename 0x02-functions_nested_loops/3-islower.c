@@ -6,13 +6,13 @@
  *
  * Description: is c lowercase
  *
- * Return: return i if 'c' lower case, otherwise return 0 (success) 
+ * Return: return 0 or 1
 */
 int _islower(int c)
 {
 	int c;
 
-	if (c >= 97; c<= 122)
+	if (c >= 97 && c <= 122)
 		return (1);
 	return (o);
 }
