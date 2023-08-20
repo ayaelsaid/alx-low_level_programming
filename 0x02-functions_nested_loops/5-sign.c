@@ -7,7 +7,7 @@
  *
  * @n: take integer for function
  *
- * Return: 0 0r 1 0r -1
+ * Return: 1 if it '+', 0 if it, -1 if it '-'
 */
 
 int print_sign(int n)
