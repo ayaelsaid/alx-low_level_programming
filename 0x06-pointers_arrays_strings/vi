@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * char *_strncpy - a function that copies a string
+ *
+ * @dest: pointer points to first character
+ *
+ * @src: pointer points to second character
+ *
+ * @n: take an integer
+ *
+ * Return: dest
+*/
+char *_strncpy(char *dest, char *src, int n)
+{
+	int i;
+
+	i = 0;
+	n = 0;
+	while (dest[i] != '\0')
+	dest++;
+	n = i + 1;
+	while (src[i] != '\0')
+	src++;
+	n = src[i];
+	dest[n + i] = src[i];
+	dest[n + i] = '\0';
+	return (dest);
+}
