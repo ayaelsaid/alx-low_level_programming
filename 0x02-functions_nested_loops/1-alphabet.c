@@ -2,9 +2,10 @@
 #include "main.h"
 
 /**
- * print_alphabe - initialize on _putchar function
+ * print_alphabet - intialize on _putchar function
  *
- * Description: Print the alphabet in lowercase
+ * decription: print the alphabet in lowercase,
+ *		followed by a new line.
  *
  * Return: void
 */

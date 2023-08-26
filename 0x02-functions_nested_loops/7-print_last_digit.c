@@ -6,17 +6,21 @@
  *
  * @n: take integer for function
  *
- * Return: 0(success)
+ * Return: last_digit
 */
 
 int print_last_digit(int n)
 {
-	int lastdigit;
+	int last_digit;
 
-	if (n < 0)
-		_putchar(lastdigit = (n % 10) * -1);
+	last_digit = n % 10;
+	if (last_digit >= 0)
+	{
+	_putchar(last_digit + 48);
+	return (last_digit);
+	}
 	else
-		_putchar(lastdigit = (n % 10) + 48);
-	return (lastdigit);
+	last_digit = last_digit * -1;
+	_putchar(last_digit + 48);
+	return (last_digit);
 }
-

@@ -15,15 +15,5 @@ int add(int a, int b)
 	int result;
 
 	result = a + b;
-	if (result >= 0 && result <= 9)
-	{
-	putchar(result + 48);
-	}
-	else
-	{
-	putcher((result / 10) + 48);
-	putchar((result % 10) + 48);
-	}
-	}
 	return (result);
 }
