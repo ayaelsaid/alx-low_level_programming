@@ -23,5 +23,3 @@ int _sqrt_recursion(int n)
 	if (result == ((n - 1) / n))
 	{
 	return (result);
-	}
-	}
