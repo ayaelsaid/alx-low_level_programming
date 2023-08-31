@@ -6,7 +6,7 @@
  *
  * @s: take a string
  *
- * Return: 1 + _strlen_recursioni + 1)
+ * Return: i or 0
 */
 int _strlen_recursion(char *s)
 {
@@ -15,5 +15,11 @@ int _strlen_recursion(char *s)
 	i = 0;
 	if (s[i] != '\0')
 	{
-	i++;
-	return (1 + _strlen_recursion(i + 1));
+	i = 1 + _strlen_recursion(s + 1);
+	return (i);
+	}
+	else
+	{
+	return (0);
+	}
+}
