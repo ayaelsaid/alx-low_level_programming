@@ -6,18 +6,25 @@
  *
  * @s: pointer points to string
  *
- * @c: pointer points to character
+ * @c: character
  *
  * Return: s or Null
 */
 char *_strchr(char *s, char c)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0 && s[i] != '\0'; i++;)
+	if (s == NULL || c == '\0')
+	{
+		return (NULL);
+	}
+	while (s[i] != '\0')
 	{
 		if (s[i] == c)
-		return (*s);
+		{
+			return (&s[i]);
+		}
+	i++;
 	}
 	return (NULL);
 }
