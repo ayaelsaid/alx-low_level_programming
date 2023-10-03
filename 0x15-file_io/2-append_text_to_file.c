@@ -17,27 +17,26 @@ int _strlen(char *s)
 	return (i);
 }
 
+
 /**
- * create_file - ...
+ * append_text_to_file - ...
  * @filename: ...
  * @text_content: ...
  * Return: ...
 */
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int f;
 	ssize_t bytes;
-	int len;
+	ssize_t len = _strlen(text_content);
 
 	if (!filename)
 		return (-1);
-	f = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
+	if (text_content == NULL)
+		return (1);
+	f = open(filename, O_WRONLY | O_APPEND);
 	if (f == -1)
-	return (-1);
-	if (text_content)
-		len = _strlen(text_content);
-	else
-		len = 0;
+		return (-1);
 	if (text_content)
 	{
 	bytes = write(f, text_content, len);
